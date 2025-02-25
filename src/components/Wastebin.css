@@ -1,0 +1,78 @@
+/* Search Bar Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Field */
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-input:focus {
+    border-color: #388E3C;
+    box-shadow: 0 0 5px rgba(56, 142, 60, 0.5);
+}
+
+/* Search Button */
+.search-button {
+    padding: 10px 15px;
+    margin-left: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-button:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+.map-container {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+/* Change directions panel background to white */
+.leaflet-routing-container {
+    background-color: white !important;
+    color: black;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Adjust text color for better visibility */
+.leaflet-routing-container * {
+    color: black !important;
+}
+.leaflet-popup-content {
+    max-width: 200px; /* Set a fixed width */
+    max-height: 100px; /* Set a fixed height */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    font-size: 14px; /* Adjust text size for readability */
+    padding: 5px;
+}
+
+.leaflet-popup-content-wrapper {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}

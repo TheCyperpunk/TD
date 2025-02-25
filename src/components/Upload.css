@@ -1,0 +1,125 @@
+.upload-container {
+  padding: 0;
+  background: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/025f2c53491147.5938713cc4989.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.upload-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  z-index: 0;
+}
+
+.upload-image-container {
+  flex: 1;
+  max-width: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  margin-right: 4rem;
+}
+
+.upload-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.upload-text {
+  flex: 1;
+  padding: 4rem;
+  max-width: 600px;
+}
+
+.upload-text h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.upload-text p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.upload-button {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(45deg, #2196F3, #00BCD4);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+}
+
+.upload-button:hover {
+  background: linear-gradient(45deg, #00BCD4, #2196F3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+}
+
+@media (max-width: 768px) {
+  .upload-content {
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .upload-text {
+    padding: 2rem;
+    max-width: 100%;
+  }
+
+  .upload-image-container {
+    max-width: 100%;
+    margin: 2rem;
+  }
+
+  .upload-text h2 {
+    font-size: 2rem;
+  }
+
+  .upload-container {
+    padding: 0;
+  }
+} 
